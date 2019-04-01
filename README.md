@@ -8,6 +8,10 @@ http://localhost:8080/hello
 
 http://localhost:8080/login
 
+http://localhost:8080/show/1
+
+http://localhost:8080/show/2
+
 # setup SQLite
 sqlite3
 sqlite3 test.db
@@ -24,6 +28,9 @@ INSERT INTO comments ( name, email, website_url, comment )
 VALUES ( 'Shivam Mamgain', 'xyz@gmail.com',
 'shivammg.blogspot.com', 'Great tutorial for beginners.' );
 
+INSERT INTO comments ( name, email, website_url, comment )
+VALUES ( 'Prabhath Kota', 'prabhath@gmail.com',
+'prabhath.blogspot.com', 'Great tutorial from Prabhath.' );
 
 SELECT post_id, name, email, website_url, comment FROM comments;
 
