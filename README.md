@@ -1,6 +1,6 @@
 # Bottle/SQLite/Paste server - testing bottle framework
 
-# How to run this?
+# How to run
 python test.py
 
 # How to Test?
