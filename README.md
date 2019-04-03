@@ -1,9 +1,9 @@
 # Bottle/SQLite/Paste server - testing bottle framework
 
-# How to run this ?
+# How to run this?
 python test.py
 
-# How to Test ?
+# How to Test?
 http://localhost:8080/hello
 
 http://localhost:8080/login
