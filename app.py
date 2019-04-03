@@ -3,7 +3,10 @@ from bottle import error
 from bottle import static_file
 from bottle import get, post, request, response
 from bottle import route, abort, template, view, install
+
+"""
 from bottle_sqlite import SQLitePlugin
+
 
 install(SQLitePlugin(dbfile='test.db'))
 
@@ -12,7 +15,7 @@ def show(db, post_id):
     c = db.execute('SELECT name, comment FROM comments WHERE post_id = ?', (post_id,))
     row = c.fetchone()
     return template('show_post', name=row['name'], comment=row['comment'])
-
+"""
 
 @route('/static/<filename>')
 def server_static(filename):
@@ -102,7 +105,8 @@ The easiest way to increase performance is to install a multi-threaded server li
 and tell Bottle to use that instead of the single-threaded server
 """
 
-run(host='localhost', port=8080, debug=True, reloader=True, server='paste')
+#run(host='localhost', port=8080, debug=True, reloader=True, server='paste')
+run(host='localhost', port=8080, debug=True, reloader=True)
 
 
 
